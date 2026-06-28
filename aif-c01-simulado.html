@@ -35,8 +35,8 @@
   }
   .wrap{max-width:860px;margin:0 auto;padding:24px 18px 80px}
   header.top{display:flex;align-items:center;gap:12px;margin-bottom:22px}
-  .logo{width:40px;height:40px;border-radius:10px;background:var(--ink);
-    display:grid;place-items:center;color:var(--accent);font-weight:800;font-size:18px}
+  .logo{width:40px;height:40px;border-radius:10px;overflow:hidden;flex:0 0 auto}
+  .logo img{width:100%;height:100%;display:block;object-fit:contain}
   .brand h1{font-size:18px;margin:0;letter-spacing:.2px}
   .brand p{font-size:12.5px;margin:0;color:var(--muted)}
   .themesw{position:relative;width:52px;height:28px;border-radius:20px;border:1.5px solid var(--line);
@@ -183,7 +183,7 @@
 <body>
 <div class="wrap">
   <header class="top">
-    <div class="logo">λ</div>
+    <div class="logo"><img src="https://images.credly.com/size/340x340/images/4d4693bb-530e-4bca-9327-de07f3aa2348/image.png" alt="AWS AI Practitioner badge"></div>
     <div class="brand">
       <h1>AIF-C01 Practice Exam</h1>
       <p>AWS Certified AI Practitioner · study companion</p>
