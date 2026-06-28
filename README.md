@@ -35,20 +35,21 @@ If you are serious about passing, use this alongside (not instead of) full-lengt
 
 ## Question Bank
 
-**290 questions** across 7 domains:
+**298 questions** across 8 domains:
 
 | Domain | Name | Questions |
 |---|---|---|
-| D1 | Fundamentals of AI and ML | 64 |
+| D1 | Fundamentals of AI and ML | 39 |
 | D2 | Fundamentals of Generative AI | 34 |
 | D3 | Applications of Foundation Models | 54 |
 | D4 | Guidelines for Responsible AI | 27 |
 | D5 | Security, Compliance, and Governance for AI Solutions | 23 |
 | D6 | Generative AI Capabilities *(focus domain)* | 46 |
 | D7 | Responsible AI: Core Dimensions *(focus domain)* | 42 |
+| D8 | AWS AI Services *(focus domain)* | 33 |
 
 **D1–D5** are the official exam domains and appear in Real exam and Custom modes.  
-**D6–D7** are supplemental focus domains, only available in By domain and Learning modes.
+**D6–D8** are supplemental focus domains, only available in By domain and Learning modes.
 
 **Question types included:**
 - Single-choice (standard)
