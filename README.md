@@ -108,7 +108,7 @@ Marks persist across sessions via `localStorage`.
 
 This project uses the same content-generation approach that **[Kiro](https://github.com/aws-samples/sample-kiro-study-buddy)** introduced for AWS study tools: the **AWS Documentation MCP server** (`awslabs.aws-documentation-mcp-server`).
 
-The MCP (Model Context Protocol) server gives an AI assistant — in this case, Claude — direct access to the official AWS documentation. Every question in this simulator was generated with that context, meaning the AI could verify:
+The MCP (Model Context Protocol) server gives an AI assistant direct access to the official AWS documentation. Every question in this simulator was generated with that context, meaning the AI could verify:
 - What a service actually does and when to use it
 - Correct service names, feature names, and pricing models
 - Best practices as documented by AWS
@@ -117,21 +117,23 @@ This approach substantially reduces hallucinations compared to asking a model to
 
 ### Want to generate your own questions?
 
-If you want to extend this simulator with new questions, adapt it to a different certification, or go deeper on specific topics, here is how to set it up:
+Any AI assistant that supports MCP can use this server — Claude, Cursor, Windsurf, or any other MCP-compatible tool. The steps below use **Claude Code** as an example, but the same MCP server works with other tools in their own MCP configuration.
 
-1. **Install Claude Code** — [claude.ai/code](https://claude.ai/code)
-2. **Add the AWS Documentation MCP server:**
+1. **Install an MCP-compatible AI assistant** (e.g., [Claude Code](https://claude.ai/code), [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/))
+2. **Add the AWS Documentation MCP server** to your assistant's MCP config:
    ```bash
+   # Example using Claude Code CLI
    claude mcp add awslabs.aws-documentation-mcp-server \
      --scope user \
      -e FASTMCP_LOG_LEVEL=ERROR \
      -- uvx awslabs.aws-documentation-mcp-server@latest
    ```
-3. **Open the project folder** in Claude Code
-4. **Ask Claude to generate questions** — for example:
+   For other tools, refer to their MCP configuration docs and point them to `uvx awslabs.aws-documentation-mcp-server@latest`.
+3. **Open the project folder** in your AI assistant
+4. **Ask it to generate questions** — for example:
    > "Generate 10 new scenario-based questions for D3 (Applications of Foundation Models) covering RAG and vector stores. Use the AWS MCP to verify service behavior. Add them to the BANK array in the HTML file."
 
-Claude will consult the live AWS docs to write and verify each question before inserting it into the file.
+The AI will consult the live AWS docs to write and verify each question before inserting it into the file.
 
 ---
 
@@ -199,7 +201,6 @@ Each question in `BANK` follows one of three formats:
 - [Tutorials Dojo AIF-C01 Practice Exams](https://tutorialsdojo.com/courses/aws-certified-ai-practitioner-practice-exams/) ← highly recommended for full preparation
 - [AWS Documentation MCP Server](https://github.com/awslabs/mcp/tree/main/src/aws-documentation-mcp-server)
 - [Kiro Study Buddy (inspiration)](https://github.com/aws-samples/sample-kiro-study-buddy)
-- [Claude Code](https://claude.ai/code)
 
 ---
 
