@@ -207,3 +207,7 @@ Each question in `BANK` follows one of three formats:
 ## License
 
 MIT License. Do whatever you want with this. If you improve it, consider opening a pull request.
+
+---
+
+**Disclaimer.** Not affiliated with, endorsed by, or associated with Amazon Web Services, Inc. AWS, Amazon Web Services, and all related marks are trademarks of Amazon.com, Inc. or its affiliates.
