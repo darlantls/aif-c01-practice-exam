@@ -8,11 +8,11 @@ An offline, single-file HTML practice simulator for the **AWS Certified AI Pract
 
 ## My Story
 
-I built this simulator while preparing for the AIF-C01 certification — and I passed. It was one of the tools I used throughout my study process, and it genuinely helped me reinforce concepts, identify weak spots, and verify whether I had actually absorbed the material before sitting the real exam.
+I built this simulator while preparing for the AIF-C01 certification, and I passed. It was one of the tools I used throughout my study process, and it genuinely helped me reinforce concepts, identify weak spots, and verify whether I had actually absorbed the material before sitting the real exam.
 
-That said, **this simulator does not replace more comprehensive resources** like [Tutorials Dojo](https://tutorialsdojo.com/) practice exams. I used those too. The goal here is different: this tool works best as a **complementary study companion** — something you run alongside your main materials to test yourself domain by domain, practice with immediate explanations, and keep coming back to the questions you got wrong.
+That said, **this simulator does not replace more comprehensive resources** like [Tutorials Dojo](https://tutorialsdojo.com/) practice exams. I used those too. The goal here is different: this tool works best as a **complementary study companion**, something you run alongside your main materials to test yourself domain by domain, practice with immediate explanations, and keep coming back to the questions you got wrong.
 
-If you are serious about passing, use this alongside — not instead of — full-length, up-to-date practice exams from dedicated providers.
+If you are serious about passing, use this alongside (not instead of) full-length, up-to-date practice exams from dedicated providers.
 
 ---
 
@@ -26,10 +26,10 @@ If you are serious about passing, use this alongside — not instead of — full
 | **Learning mode** | Choose a topic, get immediate explanations after every answer |
 | **Pause & resume** | Freeze the timer mid-exam and come back later |
 | **Per-question review** | After any exam, review every question with your pick, the correct answer, and a full explanation |
-| **History** | Last 10 exams saved locally — click any to re-review |
+| **History** | Last 10 exams saved locally. Click any to re-review |
 | **Mark to redo** | Flag questions you want to revisit (see section below) |
 | **Dark mode** | Toggle light/dark theme; preference is saved |
-| **Offline** | One HTML file, no server, no dependencies — open it directly in any browser |
+| **Offline** | One HTML file, no server, no dependencies. Open it directly in any browser |
 
 ---
 
@@ -46,15 +46,15 @@ If you are serious about passing, use this alongside — not instead of — full
 | D5 | Security, Compliance, and Governance for AI Solutions | 23 |
 | D6 | Generative AI Capabilities *(focus domain)* | 46 |
 | D7 | Responsible AI: Core Dimensions *(focus domain)* | 42 |
-| D8 | Mock 3 Mistakes — Review Set *(temporary review domain)* | 20 |
+| D8 | Mock 3 Mistakes - Review Set *(temporary review domain)* | 20 |
 
 **D1–D5** are the official exam domains and appear in Real exam and Custom modes.  
-**D6–D8** are supplemental focus domains — only available in By domain and Learning modes.
+**D6–D8** are supplemental focus domains, only available in By domain and Learning modes.
 
 **Question types included:**
 - Single-choice (standard)
-- Multiple response — Select TWO or THREE
-- Matching — associate AWS services or concepts to their definitions
+- Multiple response: Select TWO or THREE
+- Matching: associate AWS services or concepts to their definitions
 
 ---
 
@@ -84,7 +84,7 @@ Pick your own question count, domains included, feedback timing, and timer setti
 Select one of the 8 domains. If the domain has multiple subdomains (e.g., D1 has "ML fundamentals," "Managed AI services," and "Eval metrics"), a secondary filter appears automatically.
 
 ### Learning
-Select a topic from any domain. Every question shows the correct answer and a full explanation immediately — no waiting until the end. Best for targeted study sessions.
+Select a topic from any domain. Every question shows the correct answer and a full explanation immediately, with no waiting until the end. Best for targeted study sessions.
 
 ---
 
@@ -100,11 +100,11 @@ On the setup screen, a **"Marked to redo"** panel shows all flagged questions wi
 
 Marks persist across sessions via `localStorage`.
 
-> **Planned feature (not yet implemented):** The intended behavior is that once a question is marked, it stops appearing in future exam sessions automatically — until you modify it or manually remove the mark. This automatic exclusion is **not yet implemented**. Currently, marked questions still appear in the exam pool normally; the feature only surfaces them in the review list on the setup screen.
+> **Planned feature (not yet implemented):** The intended behavior is that once a question is marked, it stops appearing in future exam sessions automatically, until you modify it or manually remove the mark. This automatic exclusion is **not yet implemented**. Currently, marked questions still appear in the exam pool normally; the feature only surfaces them in the review list on the setup screen.
 
 ---
 
-## AWS MCP — How the Questions Were Generated
+## AWS MCP: How the Questions Were Generated
 
 This project uses the same content-generation approach that **[Kiro](https://github.com/aws-samples/sample-kiro-study-buddy)** introduced for AWS study tools: the **AWS Documentation MCP server** (`awslabs.aws-documentation-mcp-server`).
 
@@ -117,7 +117,7 @@ This approach substantially reduces hallucinations compared to asking a model to
 
 ### Want to generate your own questions?
 
-Any AI assistant that supports MCP can use this server — Claude, Cursor, Windsurf, or any other MCP-compatible tool. The steps below use **Claude Code** as an example, but the same MCP server works with other tools in their own MCP configuration.
+Any AI assistant that supports MCP can use this server: Claude, Cursor, Windsurf, or any other MCP-compatible tool. The steps below use **Claude Code** as an example, but the same MCP server works with other tools in their own MCP configuration.
 
 1. **Install an MCP-compatible AI assistant** (e.g., [Claude Code](https://claude.ai/code), [Cursor](https://www.cursor.com/), [Windsurf](https://windsurf.com/))
 2. **Add the AWS Documentation MCP server** to your assistant's MCP config:
@@ -130,7 +130,7 @@ Any AI assistant that supports MCP can use this server — Claude, Cursor, Winds
    ```
    For other tools, refer to their MCP configuration docs and point them to `uvx awslabs.aws-documentation-mcp-server@latest`.
 3. **Open the project folder** in your AI assistant
-4. **Ask it to generate questions** — for example:
+4. **Ask it to generate questions**, for example:
    > "Generate 10 new scenario-based questions for D3 (Applications of Foundation Models) covering RAG and vector stores. Use the AWS MCP to verify service behavior. Add them to the BANK array in the HTML file."
 
 The AI will consult the live AWS docs to write and verify each question before inserting it into the file.
@@ -144,7 +144,7 @@ aif-c01-simulado.html   ← the entire app (HTML + CSS + JS + question bank)
 README.md               ← this file
 ```
 
-Everything is self-contained in a single file. The question bank is a plain JavaScript array (`BANK`) near the top of the `<script>` section — easy to edit directly.
+Everything is self-contained in a single file. The question bank is a plain JavaScript array (`BANK`) near the top of the `<script>` section, easy to edit directly.
 
 ---
 
@@ -180,7 +180,7 @@ Each question in `BANK` follows one of three formats:
 ```
 
 **Domain keys:** `d1` through `d8`  
-**Concept keys:** defined in the `CONCEPTS` object near the top of the script — add a new key there if you create a new subdomain.
+**Concept keys:** defined in the `CONCEPTS` object near the top of the script. Add a new key there if you create a new subdomain.
 
 ---
 
@@ -188,7 +188,7 @@ Each question in `BANK` follows one of three formats:
 
 - This is an **unofficial** community-made study tool
 - Questions are based on the [AIF-C01 Exam Guide](https://aws.amazon.com/certification/certified-ai-practitioner/) and AWS documentation
-- AWS certification exams are updated periodically — always verify against the latest official exam guide
+- AWS certification exams are updated periodically. Always verify against the latest official exam guide
 - Passing this simulator does not guarantee passing the real exam
 - AWS, Amazon SageMaker, Amazon Bedrock, and all other AWS product names are trademarks of Amazon Web Services
 
@@ -206,4 +206,4 @@ Each question in `BANK` follows one of three formats:
 
 ## License
 
-MIT License — do whatever you want with this. If you improve it, consider opening a pull request.
+MIT License. Do whatever you want with this. If you improve it, consider opening a pull request.
