@@ -319,7 +319,7 @@ const DOMAINS = {
   d5:"Security, Compliance, and Governance",
   d6:"Generative AI Capabilities (focus)",
   d7:"Responsible AI: Core Dimensions (focus)",
-  d8:"Mistakes — Mock 3 (review)"
+  d8:"AWS AI Services (focus)"
 };
 const CONCEPTS = {
   "ml-basics":"ML fundamentals",
@@ -334,7 +334,6 @@ const CONCEPTS = {
   "security-gov":"Security and governance",
   "genai-capabilities":"GenAI capabilities",
   "rai-dimensions":"Responsible AI dimensions",
-  "mock3-review":"Mock 3 mistakes",
   "eval-metrics":"Eval metrics: Precision · Recall · F1 · Accuracy"
 };
 /* Real exam weights (50 scored + 15 unscored = 65). Distribution by domain:
@@ -372,22 +371,22 @@ const BANK = [
     "Good generalization; deploy as is"],
  a:1,e:"A large train-test gap indicates overfitting. Remedies include regularization, more/representative data, a simpler model, or early stopping."},
 
-{d:"d1",c:"ai-services",q:"A media company must automatically detect and filter explicit or unsafe imagery in user-uploaded photos and videos, with minimal operational overhead and no custom model training. Which AWS service is MOST suitable?",
+{d:"d8",c:"ai-services",q:"A media company must automatically detect and filter explicit or unsafe imagery in user-uploaded photos and videos, with minimal operational overhead and no custom model training. Which AWS service is MOST suitable?",
  o:["Amazon Rekognition Content Moderation",
     "Amazon Textract",
     "Amazon SageMaker Canvas",
     "AWS Lambda with custom image code"],
  a:0,e:"Amazon Rekognition provides a pre-trained Content Moderation capability for images and video, with no model training and low operational overhead."},
 
-{d:"d1",c:"ai-services",q:"An insurer receives thousands of scanned claim forms and needs to extract the printed fields, tables, and key-value pairs into structured data. Which service is purpose-built for this?",
+{d:"d8",c:"ai-services",q:"An insurer receives thousands of scanned claim forms and needs to extract the printed fields, tables, and key-value pairs into structured data. Which service is purpose-built for this?",
  o:["Amazon Comprehend","Amazon Textract","Amazon Translate","Amazon Polly"],
  a:1,e:"Amazon Textract extracts text, forms (key-value pairs), and tables from scanned documents, going beyond plain OCR."},
 
-{d:"d1",c:"ai-services",q:"A global app must convert support articles into spoken audio with lifelike voices across several languages. Which AWS service should be used?",
+{d:"d8",c:"ai-services",q:"A global app must convert support articles into spoken audio with lifelike voices across several languages. Which AWS service should be used?",
  o:["Amazon Transcribe","Amazon Polly","Amazon Comprehend","Amazon Lex"],
  a:1,e:"Amazon Polly performs text-to-speech with natural (neural) voices in many languages. Transcribe does the reverse (speech to text)."},
 
-{d:"d1",c:"ai-services",q:"A contact center wants to turn recorded customer calls into searchable text transcripts for later analysis. Which service fits best?",
+{d:"d8",c:"ai-services",q:"A contact center wants to turn recorded customer calls into searchable text transcripts for later analysis. Which service fits best?",
  o:["Amazon Transcribe","Amazon Polly","Amazon Translate","Amazon Kendra"],
  a:0,e:"Amazon Transcribe converts speech to text, including call recordings; Transcribe Call Analytics adds conversation insights."},
 
@@ -395,32 +394,32 @@ const BANK = [
  o:["Supervised learning","Unsupervised learning","Reinforcement learning","Transfer learning"],
  a:2,e:"Reinforcement learning trains an agent via rewards/penalties from interacting with an environment, learning an optimal policy through trial and error."},
 
-{d:"d1",c:"ai-services",q:"A data science team needs full control to build, train, tune, and deploy a custom ML model with their own algorithms and pipelines. Which AWS service is designed for this?",
+{d:"d8",c:"ai-services",q:"A data science team needs full control to build, train, tune, and deploy a custom ML model with their own algorithms and pipelines. Which AWS service is designed for this?",
  o:["Amazon Rekognition","Amazon SageMaker AI","Amazon Comprehend","Amazon Personalize"],
  a:1,e:"Amazon SageMaker AI is the platform to build, train, tune, and deploy custom models with full pipeline control. The others are managed AI services for specific tasks."},
 
-{d:"d1",c:"ai-services",q:"Multiple teams keep re-engineering the same customer features for different ML projects, causing duplication and training/serving inconsistencies. Which SageMaker capability provides a central place to store, share, and reuse features?",
+{d:"d8",c:"ai-services",q:"Multiple teams keep re-engineering the same customer features for different ML projects, causing duplication and training/serving inconsistencies. Which SageMaker capability provides a central place to store, share, and reuse features?",
  o:["Amazon SageMaker Autopilot",
     "Amazon SageMaker Feature Store",
     "Amazon SageMaker Model Monitor",
     "Amazon SageMaker Clarify"],
  a:1,e:"SageMaker Feature Store is a centralized repository to store, share, and reuse ML features (online and offline), reducing duplication and training-serving skew."},
 
-{d:"d1",c:"ai-services",q:"A business analyst with no coding experience wants to build ML predictions (such as customer churn) through a visual, no-code interface. Which SageMaker capability is the best fit?",
+{d:"d8",c:"ai-services",q:"A business analyst with no coding experience wants to build ML predictions (such as customer churn) through a visual, no-code interface. Which SageMaker capability is the best fit?",
  o:["Amazon SageMaker Canvas",
     "Amazon SageMaker Pipelines",
     "Amazon SageMaker Ground Truth",
     "Amazon SageMaker JumpStart"],
  a:0,e:"SageMaker Canvas offers a no-code visual interface to build models and generate predictions, ideal for non-developers. Ground Truth labels data, Pipelines orchestrate MLOps, JumpStart provides prebuilt models."},
 
-{d:"d1",c:"ai-services",q:"A team wants the fastest way to get started with prebuilt and foundation models, plus solution templates they can deploy and fine-tune inside SageMaker. Which capability should they use?",
+{d:"d8",c:"ai-services",q:"A team wants the fastest way to get started with prebuilt and foundation models, plus solution templates they can deploy and fine-tune inside SageMaker. Which capability should they use?",
  o:["Amazon SageMaker JumpStart",
     "Amazon SageMaker Data Wrangler",
     "Amazon SageMaker Feature Store",
     "Amazon SageMaker Model Monitor"],
  a:0,e:"SageMaker JumpStart is an ML hub of pretrained and foundation models plus solution templates you can deploy and fine-tune quickly."},
 
-{d:"d1",c:"ai-services",q:"An e-commerce site wants product recommendations personalized to each shopper, using the same technology that powers Amazon.com, without building a recommender from scratch. Which service fits best?",
+{d:"d8",c:"ai-services",q:"An e-commerce site wants product recommendations personalized to each shopper, using the same technology that powers Amazon.com, without building a recommender from scratch. Which service fits best?",
  o:["Amazon Personalize","Amazon Forecast","Amazon Fraud Detector","Amazon Kendra"],
  a:0,e:"Amazon Personalize delivers real-time personalized recommendations using the technology behind Amazon.com, with no ML expertise required."},
 
@@ -428,31 +427,31 @@ const BANK = [
  o:["Precision","Recall","Training-set size","Model latency"],
  a:1,e:"Recall = TP/(TP+FN) measures the share of actual positives (fraud) the model catches. Missing real fraud means low recall."},
 
-{d:"d1",c:"ai-services",q:"A startup wants to add AI capabilities quickly using fully managed, pre-trained AWS AI services instead of training models. Which TWO are pre-trained AI services for specific tasks? (Select TWO.)",
+{d:"d8",c:"ai-services",q:"A startup wants to add AI capabilities quickly using fully managed, pre-trained AWS AI services instead of training models. Which TWO are pre-trained AI services for specific tasks? (Select TWO.)",
  o:["Amazon Comprehend","Amazon SageMaker AI","Amazon Rekognition","Amazon EC2","Amazon S3"],
  a:[0,2],e:"Comprehend (NLP) and Rekognition (vision) are pre-trained AI services. SageMaker AI is a build/train platform; EC2 and S3 are general compute/storage."},
 
-{d:"d1",c:"ai-services",q:"A retailer wants to automatically analyze the sentiment and key entities in thousands of product reviews, with no model training. Which AWS service is the best fit?",
+{d:"d8",c:"ai-services",q:"A retailer wants to automatically analyze the sentiment and key entities in thousands of product reviews, with no model training. Which AWS service is the best fit?",
  o:["Amazon Comprehend","Amazon Textract","Amazon Polly","Amazon Translate"],
  a:0,e:"Amazon Comprehend is a managed NLP service that detects sentiment, entities, key phrases, language, and PII without training a model."},
 
-{d:"d1",c:"ai-services",q:"A news platform must translate articles between dozens of languages in real time and on demand. Which AWS service should it use?",
+{d:"d8",c:"ai-services",q:"A news platform must translate articles between dozens of languages in real time and on demand. Which AWS service should it use?",
  o:["Amazon Translate","Amazon Transcribe","Amazon Comprehend","Amazon Polly"],
  a:0,e:"Amazon Translate provides fast, on-demand neural machine translation between many languages."},
 
-{d:"d1",c:"ai-services",q:"A bank wants an automated voice and text assistant that understands customer intents (e.g., 'check my balance') and manages multi-turn conversations. Which service is purpose-built for this?",
+{d:"d8",c:"ai-services",q:"A bank wants an automated voice and text assistant that understands customer intents (e.g., 'check my balance') and manages multi-turn conversations. Which service is purpose-built for this?",
  o:["Amazon Lex","Amazon Kendra","Amazon Comprehend","Amazon Polly"],
  a:0,e:"Amazon Lex builds conversational interfaces using intents and slots, with automatic speech recognition and natural language understanding."},
 
-{d:"d1",c:"ai-services",q:"Employees waste time searching across SharePoint, S3, and wikis for answers. The company wants a service that indexes these sources and returns precise natural-language answers. Which service fits best?",
+{d:"d8",c:"ai-services",q:"Employees waste time searching across SharePoint, S3, and wikis for answers. The company wants a service that indexes these sources and returns precise natural-language answers. Which service fits best?",
  o:["Amazon Kendra","Amazon Macie","Amazon Comprehend","Amazon Personalize"],
  a:0,e:"Amazon Kendra is an intelligent enterprise search service that connects to many data sources and returns natural-language answers."},
 
-{d:"d1",c:"ai-services",q:"A retailer needs to predict future product demand per store using historical time-series sales and related data, without building a forecasting model from scratch. Which service is most appropriate?",
+{d:"d8",c:"ai-services",q:"A retailer needs to predict future product demand per store using historical time-series sales and related data, without building a forecasting model from scratch. Which service is most appropriate?",
  o:["Amazon Forecast","Amazon Personalize","Amazon Fraud Detector","Amazon Comprehend"],
  a:0,e:"Amazon Forecast is a managed time-series forecasting service for demand, inventory, and resource planning."},
 
-{d:"d1",c:"ai-services",q:"An online retailer wants to detect potentially fraudulent transactions and fake new accounts using a managed service with built-in ML. Which service should it choose?",
+{d:"d8",c:"ai-services",q:"An online retailer wants to detect potentially fraudulent transactions and fake new accounts using a managed service with built-in ML. Which service should it choose?",
  o:["Amazon Fraud Detector","Amazon Macie","Amazon GuardDuty","Amazon Inspector"],
  a:0,e:"Amazon Fraud Detector is a managed service that identifies potentially fraudulent online activities such as payment fraud and fake accounts. Macie, GuardDuty, and Inspector are security services, not transaction fraud."},
 
@@ -464,7 +463,7 @@ const BANK = [
  o:["Recall","Precision","Training time","Throughput"],
  a:1,e:"Precision = TP/(TP+FP) reflects how many flagged items are truly positive. Minimizing false positives (good emails marked spam) means maximizing precision."},
 
-{d:"d1",c:"ai-services",q:"Before training a supervised image classifier, a team must accurately label a large set of raw images, optionally using human reviewers. Which SageMaker capability supports building these labeled datasets?",
+{d:"d8",c:"ai-services",q:"Before training a supervised image classifier, a team must accurately label a large set of raw images, optionally using human reviewers. Which SageMaker capability supports building these labeled datasets?",
  o:["Amazon SageMaker Ground Truth",
     "Amazon SageMaker Model Monitor",
     "Amazon SageMaker Feature Store",
@@ -480,22 +479,22 @@ const BANK = [
  a:[0,2],e:"Clustering and label-free anomaly detection are unsupervised (no labeled targets). The others use labels and are supervised."},
 
 /* --- d1 exam-trap reinforcement (service selection, lifecycle, metrics, rule-vs-AI) --- */
-{d:"d1",c:"ai-services",q:"A healthcare company must transform large volumes of raw, messy data into clean, structured data to prepare it for ML. Which AWS service is purpose-built for this ETL work?",
+{d:"d8",c:"ai-services",q:"A healthcare company must transform large volumes of raw, messy data into clean, structured data to prepare it for ML. Which AWS service is purpose-built for this ETL work?",
  o:["AWS Glue","Amazon Kendra","Amazon Polly","Amazon Rekognition"],
  a:0,e:"AWS Glue is a managed ETL (extract, transform, load) service for data preparation. Kendra is enterprise search, not data prep. Match the task to the service that does exactly that."},
 
-{d:"d1",c:"ai-services",q:"Employees need to ask natural-language questions and get answers from documents spread across many internal systems. Which service fits?",
+{d:"d8",c:"ai-services",q:"Employees need to ask natural-language questions and get answers from documents spread across many internal systems. Which service fits?",
  o:["Amazon Kendra","AWS Glue","Amazon Athena","AWS Lambda"],
  a:0,e:"Kendra is intelligent search over enterprise content. Glue is ETL/data prep. Different jobs: Kendra finds answers, Glue prepares data."},
 
-{d:"d1",c:"ai-services",q:"A team needs to detect text and faces in images with minimal operational overhead and is debating between training a custom SageMaker model and using a managed service. What is the best approach?",
+{d:"d8",c:"ai-services",q:"A team needs to detect text and faces in images with minimal operational overhead and is debating between training a custom SageMaker model and using a managed service. What is the best approach?",
  o:["Use Amazon Rekognition, since a managed service already performs this exact task",
     "Train a custom computer vision model in SageMaker",
     "Build a model from scratch on EC2 with GPUs",
     "Use AWS Glue to detect faces"],
  a:0,e:"Exam shortcut: if a managed AWS AI service already does exactly the task, choose it over building your own. Rekognition handles faces/text/objects with no training."},
 
-{d:"d1",c:"ai-services",q:"In which situation is building a custom model in SageMaker MORE appropriate than using a pre-built AWS AI service?",
+{d:"d8",c:"ai-services",q:"In which situation is building a custom model in SageMaker MORE appropriate than using a pre-built AWS AI service?",
  o:["When no managed service covers the task and you need a model tailored to your unique data and requirements",
     "When a managed service already does exactly what you need",
     "Whenever you want the least operational overhead",
@@ -1303,7 +1302,7 @@ const BANK = [
     opts:["Personalization","Responsiveness","Simplicity","Data efficiency"],a:0}],
  e:"Responsiveness = real-time generation. Scalability = producing large volumes of content quickly. Personalization = tailoring output to the individual."},
 
-{d:"d1",c:"ai-services",type:"match",
+{d:"d8",c:"ai-services",type:"match",
  q:"A solutions architect must choose the right managed AWS AI service for each use case. Match each use case to the most appropriate service.",
  pairs:[
    {p:"Detect objects and moderate explicit content in images.",
@@ -1937,15 +1936,15 @@ const BANK = [
  a:1,e:"Correct: a confusion matrix shows TP/TN/FP/FN, so you see where and how the model errs. WHY OTHERS ARE WRONG: F1 collapses precision and recall into one number (no breakdown); RMSE is for regression; latency is speed. KEYWORD: 'see exactly where errors occur / FP vs FN' = confusion matrix (a single score = F1)."},
 
 /* d1 — Managed AI services */
-{d:"d1",c:"ai-services",q:"A social platform must automatically flag nudity, violence, and other unsafe content in user-uploaded photos and short videos, with minimal operational overhead and no model training. Which AWS service should it use?",
+{d:"d8",c:"ai-services",q:"A social platform must automatically flag nudity, violence, and other unsafe content in user-uploaded photos and short videos, with minimal operational overhead and no model training. Which AWS service should it use?",
  o:["Amazon Transcribe","Amazon Rekognition Content Moderation","A custom CNN trained in Amazon SageMaker","Amazon Comprehend"],
  a:1,e:"Correct: Amazon Rekognition offers a managed Content Moderation capability for images and video, ready to use with no training. WHY OTHERS ARE WRONG: Transcribe is speech-to-text (wrong modality); a custom SageMaker CNN adds needless training and ops overhead when a managed service exists; Comprehend analyzes text, not images. KEYWORD: 'flag unsafe content in images/video, minimal overhead' = Rekognition Content Moderation."},
 
-{d:"d1",c:"ai-services",q:"A marketplace wants to detect explicit images in listings. A junior engineer suggests building and training a deep learning image classifier from scratch. What is the better approach?",
+{d:"d8",c:"ai-services",q:"A marketplace wants to detect explicit images in listings. A junior engineer suggests building and training a deep learning image classifier from scratch. What is the better approach?",
  o:["Use Amazon Rekognition's pre-trained Content Moderation instead of building a model","Train a model in SageMaker because no managed option exists","Use Amazon Polly to screen the images","Use Amazon Translate to moderate the content"],
  a:0,e:"Correct: a managed service (Rekognition Content Moderation) already does this, so building a model is unnecessary cost and effort. WHY OTHERS ARE WRONG: the 'no managed option exists' claim is false; Polly is text-to-speech; Translate is language translation, neither analyzes images. KEYWORD: 'detect explicit images' + managed-first = Rekognition."},
 
-{d:"d1",c:"ai-services",q:"Employees need to ask natural-language questions and get precise answers from thousands of internal documents, wikis, and support tickets. Which AWS service is designed for this?",
+{d:"d8",c:"ai-services",q:"Employees need to ask natural-language questions and get precise answers from thousands of internal documents, wikis, and support tickets. Which AWS service is designed for this?",
  o:["AWS Glue","Amazon Athena","Amazon Kendra","Amazon EMR"],
  a:2,e:"Correct: Amazon Kendra is an intelligent enterprise search service that indexes many content sources and returns natural-language answers. WHY OTHERS ARE WRONG: Glue is ETL; Athena runs SQL on structured data; EMR is big-data processing. KEYWORD: 'natural-language answers from documents' = Kendra (not Glue)."},
 
@@ -1990,7 +1989,40 @@ const BANK = [
 
 {d:"d4",c:"responsible-ai",q:"An ML model produces biased outcomes against a demographic group. Which approach BEST addresses this responsibly?",
  o:["Write more detailed prompts","Use diverse, representative training data and measure bias with fairness metrics (e.g., SageMaker Clarify)","Increase the number of output tokens","Switch to a faster instance type"],
- a:1,e:"Correct: bias is a fairness/data problem, fix data representativeness and measure it with fairness metrics (Clarify). WHY OTHERS ARE WRONG: prompt engineering changes wording, not training-data bias, and is not a Responsible AI control; token count and instance type are unrelated to fairness. KEYWORD: 'bias / discrimination' = diverse data + fairness metrics, NOT prompt engineering."}
+ a:1,e:"Correct: bias is a fairness/data problem, fix data representativeness and measure it with fairness metrics (Clarify). WHY OTHERS ARE WRONG: prompt engineering changes wording, not training-data bias, and is not a Responsible AI control; token count and instance type are unrelated to fairness. KEYWORD: 'bias / discrimination' = diverse data + fairness metrics, NOT prompt engineering."},
+
+/* d8 — AWS AI Services (focus): additional questions */
+{d:"d8",c:"ai-services",q:"A hospital wants to extract medical conditions, medications, and dosages from clinical notes with HIPAA-eligible support. Which AWS service is purpose-built for this?",
+ o:["Amazon Comprehend","Amazon Comprehend Medical","Amazon Textract","Amazon Transcribe"],
+ a:1,e:"Correct: Amazon Comprehend Medical extracts medical entities (conditions, medications, dosages, anatomy) from clinical text and is HIPAA-eligible. WHY OTHERS ARE WRONG: standard Comprehend handles general text (sentiment, entities) but lacks medical ontologies; Textract extracts text from documents (not medical NLP); Transcribe converts speech to text. KEYWORD: 'clinical notes / medical NLP / HIPAA' = Comprehend Medical."},
+
+{d:"d8",c:"ai-services",q:"A radiology firm receives dictated reports as audio files and needs them transcribed with correct medical terminology such as anatomical terms and drug names. Which AWS service is most appropriate?",
+ o:["Amazon Polly","Amazon Transcribe Medical","Amazon Lex","Amazon Translate"],
+ a:1,e:"Correct: Amazon Transcribe Medical is optimized for medical speech, with a vocabulary of medical and pharmaceutical terms, and is HIPAA-eligible. WHY OTHERS ARE WRONG: standard Transcribe lacks medical vocabulary depth; Polly is text-to-speech (opposite direction); Lex builds conversational chatbots; Translate converts between languages. KEYWORD: 'medical dictation / clinical audio / drug names' = Transcribe Medical."},
+
+{d:"d8",c:"ai-services",q:"A manufacturer wants to detect whether workers on the factory floor are wearing hard hats and safety vests in real-time video feeds, with no model training. Which AWS service supports this?",
+ o:["Amazon Rekognition (PPE detection)","Amazon Lookout for Vision","A custom CNN in SageMaker","Amazon Textract"],
+ a:0,e:"Correct: Amazon Rekognition includes a PPE (Personal Protective Equipment) detection API that identifies hard hats, vests, gloves, and masks without any training. WHY OTHERS ARE WRONG: Lookout for Vision is for industrial defect detection in products, not PPE; a custom CNN requires labeling and training; Textract reads text from documents. KEYWORD: 'hard hats / safety gear / PPE / factory floor' = Rekognition PPE detection."},
+
+{d:"d8",c:"ai-services",q:"A streaming platform wants to identify which celebrities appear in video clips so it can auto-tag content and surface relevant metadata. Which AWS service provides this out of the box?",
+ o:["Amazon Rekognition (celebrity recognition)","Amazon Comprehend","Amazon Kendra","Amazon Personalize"],
+ a:0,e:"Correct: Amazon Rekognition Celebrity Recognition identifies thousands of known public figures in images and videos and returns their names with confidence scores. WHY OTHERS ARE WRONG: Comprehend analyzes text; Kendra searches documents; Personalize delivers item recommendations. KEYWORD: 'identify celebrities in video' = Rekognition celebrity recognition."},
+
+{d:"d8",c:"ai-services",q:"An e-commerce company requires that automated product translations preserve its proprietary brand names and trademark terms exactly, without the translation engine altering them. Which Amazon Translate feature enables this?",
+ o:["Active Custom Translation","Custom Terminology","Neural Machine Translation","Parallel Data"],
+ a:1,e:"Correct: Custom Terminology lets you upload a glossary of brand names, product names, and terms that Amazon Translate must preserve verbatim in the output. WHY OTHERS ARE WRONG: Active Custom Translation (now called Custom Translation) fine-tunes translation on your parallel data, but doesn't pin exact terms; Parallel Data is the training corpus for Custom Translation; Neural Machine Translation is the underlying engine, not a configuration option. KEYWORD: 'preserve brand/trademark terms exactly' = Custom Terminology."},
+
+{d:"d8",c:"ai-services",q:"A call center manager wants to automatically score every agent call for compliance phrases, detect customer sentiment in real time, and flag calls where a customer says 'cancel.' Which service is designed for this end-to-end contact center analytics use case?",
+ o:["Amazon Transcribe Call Analytics","Amazon Lex","Amazon Connect","Amazon Comprehend"],
+ a:0,e:"Correct: Amazon Transcribe Call Analytics combines speech-to-text with built-in call analytics: speaker diarization, sentiment per turn, issue detection, and custom category rules (e.g., flag 'cancel'). WHY OTHERS ARE WRONG: Amazon Lex builds chatbot flows; Amazon Connect is the contact center platform (it can integrate Transcribe Call Analytics but is not the analytics engine itself); Comprehend is a general NLP service without call-specific features like diarization. KEYWORD: 'agent scoring / sentiment per turn / flag keywords in calls' = Transcribe Call Analytics."},
+
+{d:"d8",c:"ai-services",q:"A fintech startup wants to add intelligent document processing: it receives PDFs of loan applications and needs to extract form fields and tables into structured JSON, then route the data downstream. Which AWS service should handle the extraction step?",
+ o:["Amazon Comprehend","Amazon Textract","AWS Glue","Amazon Kendra"],
+ a:1,e:"Correct: Amazon Textract automatically detects and extracts text, handwriting, form key-value pairs, and tables from scanned documents and PDFs, returning structured output. WHY OTHERS ARE WRONG: Comprehend analyzes text for entities and sentiment after extraction, it does not extract layout/tables; Glue is an ETL service for data pipelines; Kendra searches and answers questions from indexed content. KEYWORD: 'extract form fields / tables from PDFs / IDP' = Textract."},
+
+{d:"d8",c:"ai-services",q:"A SaaS company wants to build a chatbot that handles multi-turn conversations, maintains session context, and fulfills user intents by calling backend Lambda functions. Which AWS service is the right foundation?",
+ o:["Amazon Polly","Amazon Lex","Amazon Transcribe","Amazon Comprehend"],
+ a:1,e:"Correct: Amazon Lex is the managed service for building conversational interfaces; it handles intent recognition, slot filling, multi-turn dialogs, and integrates natively with Lambda for fulfillment. WHY OTHERS ARE WRONG: Polly converts text to speech (an output layer, not a dialog engine); Transcribe converts speech to text (input layer only); Comprehend classifies and extracts entities from text but has no dialog management. KEYWORD: 'multi-turn dialog / intents / slots / Lambda fulfillment' = Lex."}
 
 ];
 
