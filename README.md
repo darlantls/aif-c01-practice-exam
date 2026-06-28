@@ -206,7 +206,7 @@ Each question in `BANK` follows one of three formats:
 
 ## License
 
-MIT License. Do whatever you want with this. If you improve it, consider opening a pull request.
+MIT License.
 
 ---
 
