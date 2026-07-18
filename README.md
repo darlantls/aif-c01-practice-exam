@@ -198,10 +198,10 @@ Each question in `BANK` follows one of three formats:
 
 I build one of these for every certification I take, and only publish after passing:
 
-| Simulator | Certification | Result |
-|---|---|---|
-| **AIF-C01 Practice Exam** (this repo) | AWS Certified AI Practitioner | ✅ Passed |
-| [CCCS Practice Exam](https://github.com/darlantls/cccs-practice-exam) | CrowdStrike Certified Cloud Specialist | ✅ Passed |
+| Simulator | Certification |
+|---|---|
+| **AIF-C01 Practice Exam** (this repo) | AWS Certified AI Practitioner |
+| [CCCS Practice Exam](https://github.com/darlantls/cccs-practice-exam) | CrowdStrike Certified Cloud Specialist |
 
 The long-term plan is to unify all simulators into a single study platform.
 
