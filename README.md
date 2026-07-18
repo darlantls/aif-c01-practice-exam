@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="aif-c01-badge.png" alt="AWS Certified AI Practitioner badge" width="180">
+</p>
+
 # AIF-C01 Practice Exam Simulator
 
 An offline, single-file HTML practice simulator for the **AWS Certified AI Practitioner (AIF-C01)** exam.
@@ -141,6 +145,7 @@ The AI will consult the live AWS docs to write and verify each question before i
 
 ```
 aif-c01-simulado.html   ← the entire app (HTML + CSS + JS + question bank)
+aif-c01-badge.png       ← certification badge shown in this README
 README.md               ← this file
 ```
 
