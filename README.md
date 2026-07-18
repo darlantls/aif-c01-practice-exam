@@ -194,6 +194,19 @@ Each question in `BANK` follows one of three formats:
 
 ---
 
+## Other Simulators I Built
+
+I build one of these for every certification I take, and only publish after passing:
+
+| Simulator | Certification | Result |
+|---|---|---|
+| **AIF-C01 Practice Exam** (this repo) | AWS Certified AI Practitioner | ✅ Passed |
+| [CCCS Practice Exam](https://github.com/darlantls/cccs-practice-exam) | CrowdStrike Certified Cloud Specialist | ✅ Passed |
+
+The long-term plan is to unify all simulators into a single study platform.
+
+---
+
 ## Resources
 
 - [AIF-C01 Exam Guide (official)](https://aws.amazon.com/certification/certified-ai-practitioner/)
