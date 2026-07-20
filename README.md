@@ -207,6 +207,7 @@ I build one of these for every certification I take, and only publish after pass
 |---|---|
 | **AIF-C01 Practice Exam** (this repo) | AWS Certified AI Practitioner |
 | [CCCS Practice Exam](https://github.com/darlantls/cccs-practice-exam) | CrowdStrike Certified Cloud Specialist |
+| [CLF-C02 Practice Exam](https://github.com/darlantls/clf-c02-practice-exam) | AWS Certified Cloud Practitioner |
 
 The long-term plan is to unify all simulators into a single study platform.
 
